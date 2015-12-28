@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Seating Area</title>
+</head>
+<body>
+<header>
+    <h3>Balthazar Reservation</h3>
+    <nav>
+        <ul class="nav nav-pills">
+            <li><a href="owner_home.html">Home</a></li>
+            <li><a href="owner_settings.html">Profile & Settings</a></li>
+            <li><a href="#">View Seating Area</a></li>
+            <li><a href="contacts.html">View Contacts</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="content">
+    <h4>Current reservations</h4>
+    <p class="copyright">Click on table to edit reservation</p><br>
+    <table class="table">
+        <tr>
+            <th>Table No</th>
+            <th>ConfirmationCode</th>
+            <th>Size</th>
+            <th>Status</th>
+            <th>Since</th>
+        </tr>
+        <tr class="resList" onclick="document.location = 'edit_owner.html'">
+            <td>12</td>
+            <td>#1256457</td>
+            <td>2</td>
+            <td>Confirmed</td>
+            <td>12/20/2015</td>
+        </tr>
+        <tr class="resList" onclick="document.location = 'edit_owner.html'">
+            <td>21</td>
+            <td>#1256458</td>
+            <td>6</td>
+            <td>Confirmed</td>
+            <td>12/22/2015</td>
+        </tr>
+        <tr class="resList" onclick="document.location = 'edit_owner.html'">
+            <td>33</td>
+            <td>#1256458</td>
+            <td>8</td>
+            <td>Confirmed</td>
+            <td>12/18/2015</td>
+        </tr>
+    </table>
+</div>
+<footer>
+    <ul class="footerLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p class="copyright">&copy; 2015 Wayne Tech.</p>
+</footer>
+</body>
+</html>

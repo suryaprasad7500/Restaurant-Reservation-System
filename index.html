@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function login(){
+            var id = document.forms["loginForm"]["email"].value;
+            if(id === "customer@gmail.com"){
+                window.open(document.location = "cust_home.html");
+            }
+            else if(id === "owner@gmail.com"){
+                window.open(document.location = "owner_home.html");
+            }
+        }
+
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Balthazar Reservation</title>
+</head>
+<body>
+<header>
+    <h3>Balthazar Reservation</h3>
+    <nav>
+        <ul class="nav nav-pills">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="login">
+    <img src="assets/login.png" class="iconImg">&nbsp;Login<br>
+    <form name="loginForm" action="" onsubmit="login()">
+        <table>
+            <tr>
+                <td>
+                    E-Mail
+                </td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password
+                </td>
+                <td>
+                    <input type="password" name="password">
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Login" class="right-bottom-corner btn btn-default">
+    </form>
+</div>
+<footer>
+    <ul class="footerLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p class="copyright">&copy; 2015 Wayne Tech.</p>
+</footer>
+</body>
+</html>

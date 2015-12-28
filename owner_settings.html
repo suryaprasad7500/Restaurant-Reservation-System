@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile & Settings - Balthazar</title>
+</head>
+<body>
+<header>
+    <h3>Balthazar Reservation</h3>
+    <nav>
+        <ul class="nav nav-pills">
+            <li><a href="owner_home.html">Home</a></li>
+            <li><a href="#">Profile & Settings</a></li>
+            <li><a href="seating_area.html">View Seating Area</a></li>
+            <li><a href="contacts.html">View Contacts</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="content">
+    <h4>Profile & Settings</h4>
+    <form action="">
+        <table class="settings">
+            <tr>
+                <td>Restaurant Name</td>
+                <td><input type="text" value="Balthazar" id="rName"></td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td><input type="text" value="80 Spring St, New York, NY 10012" id="address"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" value="4695006875" id="pNo" pattern="[0-9]{10}"></td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" value="address@gmail.com" id="email"></td>
+            </tr>
+            <tr>
+                <td>New Password</td>
+                <td><input type="password" id="newPass"></td>
+            </tr>
+            <tr>
+                <td>Current Password</td>
+                <td><input type="password" id="currPass"></td>
+            </tr>
+            <tr>
+                <td>Open Days</td>
+                <td>
+                    M&nbsp;<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    T<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    W<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    Th<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    F<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    Sa<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    Su<input type="checkbox" class="checkbox-inline"></td>
+            </tr>
+            <tr>
+                <td>Open Times</td>
+                <td>From&nbsp;<input type="time" id="fromTime">&nbsp;&nbsp;To&nbsp;<input type="time" id="toTime"></td>
+            </tr>
+            <tr>
+                <td>Auto Assign Table</td>
+                <td><input type="radio" name="autoAssign" checked="checked"> Enable&nbsp;<input type="radio"
+                                                                                                name="autoAssign">
+                    Disable
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Update" class="btn btn-default"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<footer>
+    <ul class="footerLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p class="copyright">&copy; 2015 Wayne Tech.</p>
+</footer>
+</body>
+</html>

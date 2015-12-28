@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home - Balthazar</title>
+</head>
+<body>
+<header>
+    <h3>Balthazar Reservation</h3>
+    <nav>
+        <ul class="nav nav-pills">
+            <li><a href="#">Home</a></li>
+            <li><a href="owner_settings.html">Profile & Settings</a></li>
+            <li><a href="seating_area.html">View Seating Area</a></li>
+            <li><a href="contacts.html">View Contacts</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="content">
+    <h4>Current reservations</h4>
+    <p><a href="create_owner.html">Add reservation</a></p>
+    <p class="copyright">Click on reservation to edit</p><br>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Confirmation No</th>
+            <th>Table No</th>
+            <th>Party Size</th>
+        </tr>
+        <tr class="resList" onclick="document.location = 'edit_owner.html'">
+            <td>Bruce Wayne</td>
+            <td>21:00</td>
+            <td>12/25/2015</td>
+            <td>#1256457</td>
+            <td>12</td>
+            <td>2</td>
+        </tr>
+        <tr class="resList" onclick="document.location = 'edit_owner.html'">
+            <td>Jack Sparrow</td>
+            <td>19:30</td>
+            <td>12/30/2015</td>
+            <td>#1256458</td>
+            <td>21</td>
+            <td>6</td>
+        </tr>
+        <tr class="resList" onclick="document.location = 'edit_owner.html'">
+            <td>Luke Skywalker</td>
+            <td>19:30</td>
+            <td>1/2/2016</td>
+            <td>#1256458</td>
+            <td>21</td>
+            <td>8</td>
+        </tr>
+    </table>
+</div>
+<footer>
+    <ul class="footerLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p class="copyright">&copy; 2015 Wayne Tech.</p>
+</footer>
+</body>
+</html>

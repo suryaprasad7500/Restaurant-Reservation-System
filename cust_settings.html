@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Settings - Balthazar</title>
+</head>
+<body>
+<header>
+    <h3>Balthazar Reservation</h3>
+    <nav>
+        <ul class="nav nav-pills">
+            <li><a href="cust_home.html">Home</a></li>
+            <li><a href="#">Profile & Settings</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="content">
+    <h4>Profile</h4>
+    <form action="">
+        <table class="settings">
+            <tr>
+                <td>First Name</td><td><input type="text" value="Bruce" id="fName" pattern="[^(0-9)]*"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td><td><input type="text" value="Wayne" id="lName" pattern="[^(0-9)]*"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td><td><input type="text" value="4695006875" id="pNo" pattern="[0-9]{10}"></td>
+            </tr>
+            <tr>
+                <td>Email ID</td><td><input type="email" value="address@gmail.com" id="email"></td>
+            </tr>
+            <tr>
+                <td>New Password</td><td><input type="password" id="newPass"></td>
+            </tr>
+            <tr>
+                <td>Current Password</td><td><input type="password" id="currPass"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td><input type="submit" value="Update" class="btn btn-default"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<footer>
+    <ul class="footerLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p class="copyright">&copy; 2015 Wayne Tech.</p>
+</footer>
+
+</body>
+</html>

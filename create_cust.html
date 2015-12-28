@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Create Reservation - Balthazar</title>
+</head>
+<body>
+<header>
+    <h3>Balthazar Reservation</h3>
+    <nav>
+        <ul class="nav nav-pills">
+            <li><a href="cust_home.html">Home</a></li>
+            <li><a href="cust_settings.html">Profile & Settings</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="content">
+    <h4>Add Reservation</h4>
+    <form action="">
+        <table class="settings">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" id="fName" required></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="lName" required></td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td><input type="time" id="resTime" required>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td><input type="date" value="" id="resDate" required></td>
+            </tr>
+            <tr>
+                <td>Party Size</td>
+                <td><input type="number" min="1" max="16" id="partySize" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" id="pNo" pattern="[0-9]{10}" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Add" class="btn btn-default"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<footer>
+    <ul class="footerLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p class="copyright">&copy; 2015 Wayne Tech.</p>
+</footer>
+</body>
+</html>
