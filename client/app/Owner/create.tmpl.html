@@ -1,0 +1,36 @@
+<div class="content">
+    <h4>Add Reservation</h4>
+    <form ng-submit="createCon.addReservation(res)" ng-controller="ResCreateController as createCon">
+        <table class="settings">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name" ng-model="res.customerName" required></td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td><input type="text" id="resTime" ng-model="res.time" placeholder="HH:MM" required></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td><input type="text" id="resDate" ng-model="res.date" placeholder="YYYY/MM/DD" required></td>
+            </tr>
+            <tr>
+                <td>Party Size</td>
+                <td><input type="number" min="1" max="16" ng-model="res.size" id="partySize" required></td>
+            </tr>
+            <tr>
+                <td>Table No</td>
+                <td><input type="text" id="tableNo" ng-model="res.tableNumber" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="email" ng-model="res.email"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Add" class="btn btn-default"></td>
+            </tr>
+        </table>
+    </form>
+</div>

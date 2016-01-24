@@ -1,0 +1,32 @@
+<div class="content">
+    <h4>Edit Reservation</h4>
+    <form action="">
+        <table class="settings">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" placeholder={{resSingleModel.info.customerName}} ng-model="res.customerName" id="name"></td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td><input type="text" placeholder={{resSingleModel.info.time}} ng-model="res.time" id="resTime">
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td><input type="text" placeholder={{resSingleModel.info.date}} ng-model="res.date" id="resDate"></td>
+            </tr>
+            <tr>
+                <td>Party Size</td>
+                <td><input type="number" placeholder={{resSingleModel.info.size}} ng-model="res.size" min="1" max="16" id="partySize"></td>
+            </tr>
+            <tr>
+                <td>Table No</td>
+                <td><input type="text" placeholder={{resSingleModel.info.tableNumber}} ng-model="res.table" id="tableNo"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Update" class="btn btn-default"></td>
+            </tr>
+        </table>
+    </form>
+</div>

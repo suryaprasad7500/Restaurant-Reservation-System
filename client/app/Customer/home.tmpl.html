@@ -1,0 +1,26 @@
+<div class="content">
+    <div ng-include = "'app/Customer/nav.tmpl.html'"></div>
+    <h4>Welcome, Bruce!</h4>
+    <h4>Current reservations</h4>
+    <p><a href="#/customer_create">Add reservation</a></p>
+    <p class="copyright">Click on confirmation code to edit</p><br>
+    <table class="table">
+        <tr>
+            <th>Confirmation No</th>
+            <th>Name</th>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Table No</th>
+            <th>Party Size</th>
+        </tr>
+        <!--ng-repeat="ress in resSingleModel.info"-->
+        <tr class="resList">
+            <td><a ng-href="#/customer_res/{{resSingleModel.info.email}}">{{resSingleModel.info.confNumber}}</a></td>
+            <td>{{resSingleModel.info.customerName}}</td>
+            <td>{{resSingleModel.info.time}}</td>
+            <td>{{resSingleModel.info.date}}</td>
+            <td>{{resSingleModel.info.tableNumber}}</td>
+            <td>{{resSingleModel.info.size}}</td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,21 @@
+<div class="content">
+    <div ng-include="'app/Owner/nav.tmpl.html'"></div>
+    <h4>Tables</h4>
+    <br>
+    <table class="table">
+        <tr>
+            <th>Table No</th>
+            <th>ConfirmationCode</th>
+            <th>Size</th>
+            <th>Status</th>
+            <th>Since</th>
+        </tr>
+        <tr class="resList" ng-repeat="table in tableInfo.info">
+            <td>{{table.confNumber}}</td>
+            <td>{{table.tableNumber}}</td>
+            <td>{{table.size}}</td>
+            <td>{{table.status}}</td>
+            <td>{{table.bookedSince}}</td>
+        </tr>
+    </table>
+</div>

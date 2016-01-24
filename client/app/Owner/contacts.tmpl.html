@@ -1,0 +1,16 @@
+<div class="content">
+    <div ng-include="'app/Owner/nav.tmpl.html'"></div>
+    <h4>Contacts</h4><br>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Email Address</th>
+        </tr>
+        <tr ng-repeat="cust in custList.data" class="resList">
+            <td>{{cust.customerName}}</td>
+            <td>{{cust.phone}}</td>
+            <td>{{cust.email}}</td>
+        </tr>
+    </table>
+</div>

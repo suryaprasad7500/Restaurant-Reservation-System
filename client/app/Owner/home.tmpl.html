@@ -1,0 +1,26 @@
+<div class="content">
+    <div ng-include="'app/Owner/nav.tmpl.html'"></div>
+    <h4>Current reservations</h4>
+    <p><a href="#/owner_create">Add reservation</a></p>
+    <p class="copyright">Click on confirmation number to edit</p><br>
+    <table class="table">
+        <tr>
+            <th>Confirmation No</th>
+            <th>Name</th>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Table No</th>
+            <th>Party Size</th>
+            <th>Email</th>
+        </tr>
+        <tr ng-repeat = "res in resListModel.res">
+            <td><a ng-href="#/owner_edit/{{res.email}}">{{res.confNumber}}</a></td>
+            <td>{{res.customerName}}</td>
+            <td>{{res.time}}</td>
+            <td>{{res.date}}</td>
+            <td>{{res.tableNumber}}</td>
+            <td>{{res.size}}</td>
+            <td>{{res.email}}</td>
+        </tr>
+    </table>
+</div>

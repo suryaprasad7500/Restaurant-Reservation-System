@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "rrs">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Balthazar Reservation</title>
+</head>
+<body>
+<header>
+    <h3>Balthazar Reservation</h3>
+</header>
+<div ng-view></div>
+<footer>
+    <ul class="footerLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p class="copyright">&copy; 2015 Wayne Tech.</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.4.8/angular-route.js"></script>
+<script src="client/app/app.js"></script>
+<script src="client/app/data.service.js"></script>
+<script src="client/app/Reservation/res-list-controller.js"></script>
+<script src="client/app/Reservation/res-single-controller.js"></script>
+<script src="client/app/Reservation/res-create.js"></script>
+<script src="client/app/Reservation/res-update.js"></script>
+<script src="client/app/Customer/cust-profile-update.js"></script>
+<script src="client/app/Owner/owner-details.js"></script>
+<script src="client/app/Seating/view-tables.js"></script>
+<script src="client/app/Customer/cust-view-all.js"></script>
+<script src="client/app/Customer/cust-single.js"></script>
+<script>
+    function login(){
+        var id = document.forms["loginForm"]["email"].value;
+        if(id === "bruce@wayne.com"){
+            //window.open(document.location = "cust_home.html");
+            window.location = "#/customer_home/" + id
+        }
+        else if(id === "owner@gmail.com"){
+            //window.open(document.location = "owner_home.html");
+            window.location = "#/owner_home"
+        }
+    }
+</script>
+</body>
+</html>

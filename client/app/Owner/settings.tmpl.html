@@ -1,0 +1,59 @@
+<div class="content">
+    <div ng-include="'app/Owner/nav.tmpl.html'"></div>
+    <h4>Profile & Settings</h4>
+    <form action="">
+        <table class="settings">
+            <tr>
+                <td>Restaurant Name</td>
+                <td><input type="text" placeholder="{{ownerDetails.detail.restName}}" ng-model="owner.restName" id="rName"></td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td><input type="text" placeholder="{{ownerDetails.detail.location}}" ng-model="owner.location" id="address"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" placeholder="{{ownerDetails.detail.phone}}" ng-model="owner.phone" id="pNo" pattern="[0-9]{10}"></td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" placeholder="{{ownerDetails.detail.email}}" ng-model="owner.email" id="email"></td>
+            </tr>
+            <tr>
+                <td>New Password</td>
+                <td><input type="password" id="newPass"></td>
+            </tr>
+            <tr>
+                <td>Current Password</td>
+                <td><input type="password" id="currPass"></td>
+            </tr>
+            <tr>
+                <td>Open Days</td>
+                <td>
+                    M&nbsp;<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    T<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    W<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    Th<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    F<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    Sa<input type="checkbox" class="checkbox-inline">&nbsp;&nbsp;
+                    Su<input type="checkbox" class="checkbox-inline"></td>
+            </tr>
+            <tr>
+                <td>Open Times</td>
+                <td>From&nbsp;<input type="time" id="fromTime">&nbsp;&nbsp;To&nbsp;<input type="time" id="toTime"></td>
+            </tr>
+            <tr>
+                <td>Auto Assign Table</td>
+                <td><input type="radio" name="autoAssign" checked="checked"> Enable&nbsp;<input type="radio"
+                                                                                                name="autoAssign">
+                    Disable
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Update" class="btn btn-default"></td>
+            </tr>
+        </table>
+    </form>
+</div>
